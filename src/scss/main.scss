@@ -18,3 +18,239 @@
 @import "components/tables";
 @import "components/navigation";
 @import "components/layout";
+
+.twitter,
+.fb{
+  transition: all 350ms cubic-bezier(0.13, 0.43, 0.54, 1.82);
+}
+.twitter:hover,
+.fb:hover{
+transform: scale(1.1);
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left:0;
+  margin-right:0;
+}
+.flex-small {
+  flex-basis: 100%;
+  padding: 0;
+}
+.right_col {
+  background: url("../images/katie-2.png");
+  background-size: cover;
+  background-position: 65%;
+  opacity: 1;
+transition: 1s ease;
+}
+.right_col:hover{
+  opacity:0.8;
+  transition: 1s ease;
+}
+.bg {
+  min-height: 100vh;
+}
+.left_col {
+  background: $primary-color;
+  color: #fff;
+}
+.logo {
+  background: white;
+  flex: 1;
+}
+.social {
+  background: $secondary-color;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.left_col > .flex-row {
+  flex-wrap: nowrap;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bio{
+  padding:0rem 2rem 0 2rem;
+}
+.social{
+  padding: 1rem 0;
+}
+.logo{
+  padding: 1rem 2rem 1rem 2rem;
+}
+.copy{
+  padding:0rem 2rem 0 2rem;
+}
+.copy{
+  display: flex;
+  flex-direction: column;
+}
+.copy a{
+  color: #fff;
+}
+.fa-heart{
+  color: $alternate-color;
+}
+@include x-small-breakpoint{
+.social{
+  padding: 0 1rem;
+  }
+  .bio{
+    padding-left: 4rem;
+  }
+  .logo{
+    padding-left: 4rem;
+  }
+  .copy{
+    padding:0rem 4rem 0 4rem;
+  }
+}
+@include x-large-breakpoint{
+  .logo{
+    padding: 1rem 2rem 1rem 10rem;
+  }
+  .bio{
+    padding:3rem 4rem 0 10rem;
+  }
+  .social{
+    padding: 0 3rem;
+    }
+    .copy{
+      padding:2rem 4rem 2rem 10rem;
+    }
+}
+@include mega-large-breakpoint{
+  .logo{
+    padding: 1rem 2rem 1rem 15rem;
+  }
+  .bio{
+    padding:3rem 4rem 0 15rem;
+  }
+  .copy{
+    padding:2rem 4rem 0 15rem;
+  }
+  .social{
+    padding: 0 5rem;
+    }
+}
+
+/*
+padding
+-----------------*/
+
+.logo img{
+  width: 60px;
+}
+.icons img{
+  width: 30px;
+  height: 30px;
+}
+.copy img{
+  width: 90px;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+
+/*
+logo sizes
+-----------------*/
+
+.social p{
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+.social h3{
+  font-size: 2rem;
+  color: #fff;
+  margin: 0;
+}
+@include x-small-breakpoint{
+  .social h3{
+    font-size: 3rem;
+    color: #fff;
+    margin: 0;
+  }
+}
+@include small-breakpoint{
+  .social p{
+    font-size: 1rem;
+  }
+}
+@include large-breakpoint{
+  .social p{
+    font-size: 1.1rem;
+  }
+}
+
+/*
+font-size
+-----------------*/
+
+.bio h2{
+  color: $accent-color;
+  font-family: $font-family;
+}
+.right_col{
+  display: none;
+}
+.fb{
+  margin-right: 1em;
+}
+
+@include x-small-breakpoint{
+  .social{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .social p{
+    margin-bottom: 0;
+  }
+}
+@include small-breakpoint{
+  .flex-xs-small{
+    flex: 0.9;
+  }
+ .flex-small {
+   flex: 1;
+ }
+ .left_col {
+   flex: 3;
+ }
+ .logo{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+ }
+ .social {
+   flex: 4;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+ }
+}
+@include x-large-breakpoint{
+  .copy img{
+    display: none;
+  }
+  .right_col{
+    display: block;
+  }
+  .left_col{
+    flex:3;
+  }
+}
+@include mega-large-breakpoint{
+  .left_col{
+    flex:2.5;
+  }
+}

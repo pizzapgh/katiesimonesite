@@ -10,20 +10,24 @@ $x-small: 600px;
 $small: 800px;
 $medium: 1000px;
 $large: 1200px;
+$mega: 1589px;
 
 /* Breakpoints */
 
 $mobile: $x-small;
+$tablet: $small;
 $desktop: $medium;
+$desktop-lg: $large;
+$desktop-mega: $mega;
 
 /* Colors */
 
-$background: white; 
-$primary-color: #0366EE;
-$secondary-color: #5FBA7D; 
-$accent-color: #cdcdcd;
+$background: white;
+$primary-color: #9c7878;
+$secondary-color: #7da5a6;
+$accent-color: #ffffcc;
 $alternate-background: #fafafa;
-$alternate-color: #404040;
+$alternate-color: #b64231;
 $link-color: $primary-color;
 $link-hover-color: darken($link-color, 15%);
 $highlight: #ffeea8;
@@ -39,13 +43,13 @@ $font-style: normal;
 $font-variant: normal;
 $font-weight: normal;
 $font-color: #404040;
-$font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
+$font-family: Noto Serif, serif;
 $line-height: 1.6;
 
 // Headings
 $heading-font-color: #404040;
 $heading-font-weight: 600;
-$heading-font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
+$heading-font-family: Passion One, cursive;
 $heading-line-height: 1.2;
 
 // Mobile heading font size
